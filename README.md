@@ -1,2 +1,2 @@
 # HTML-Widgets
-HTML widgets code.
+Some HTML widget code.
