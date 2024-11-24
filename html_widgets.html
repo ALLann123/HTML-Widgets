@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Widgets</h1>
+        <form action="http://www.example.com/login.php">
+            <p>
+                username:
+                <input type="text" name="username" size="15" maxlength="30"/><br/>
+                <br/>
+                password:
+                <input type="password" name="password" size="15" maxlength="8" required="required"/><br>
+                <input type="submit" name="submit"/>
+                <br/>
+                <hr/>
+                Ask any question type below:<br/>
+                <textarea name="comments" cols="35" rows="9">Enter your question...</textarea>
+                <br/>
+                <hr/>
+                select the programming language
+                <input type="radio" name="language" value="Python"/>Python
+                <input type="radio" name="language" vakue="C/c++"/>C++
+                <input type="radio" name="language" value="Java"/>Java
+                <br/>
+                <br>
+                select your city:
+                <input type="checkbox" name="city" value="Nairobi">Nairobi
+                <input type="checkbox" name="city" value="Kitale">Kitale
+                <input type="checkbox" name="city" value="Eldoret">Eldoret
+                <br>
+                <br>
+                select preferred Operating system for penetration testing:
+                <select name="os">
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                    <option value="mac">Macintosh</option>
+                </select>
+                <hr/>
+                <br>
+                Subscribe to our email list:<br>
+                <input type="text" name="email"/>
+                <input type="submit" name="subscribe" value="subscribe"/>
+                <br>
+                <br>
+                Search:
+                <input type="search" name="search" placeholder="Enter Keyword..">
+                <input type="submit" value="search"/>
+                <br>
+            </p>
+        </form>
+        <form action=""http://www.example.com/upload.php" method="post">
+            <p>Upload Your shell here:</p>
+            <input type="file" name="shell"/><br>
+            <input type="submit" value="upload"/>
+            <br>
+            <hr/>
+        </form>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email:<br>
+                <input type="text" name="email"/>
+            </label><br>
+            <label>Mobile:<br>
+                <input type="text" name="number">
+            </label><br>
+            <label>City:<br>
+                <input type="text" name="city">
+            </label>
+            <br>
+            <hr>
+        </fieldset>
+        <br>
+        <form action="http://www.example.com/bookings/" method="post">
+            <label for="username">Depature time:</label>
+            <input type="date" name="depart">
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>
